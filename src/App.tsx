@@ -1,13 +1,12 @@
-import React from 'react';
-import World from './Globe';
 import Header from './Header';
+import Picker from './Picker';
 
 function App() {
 
   return (
     <div className='app'>
       <Header />
-      <World />
+      <Picker />
     </div>
   );
 }

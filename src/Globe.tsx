@@ -1,18 +1,15 @@
 import { useRef, useState, useEffect } from "react";
 import Globe from 'react-globe.gl';
 import points from "./points";
+import ClickablePoint from './Types/points';
 
-type wPoint = {
-    name: string,
-    lat: number,
-    lng: number,
-    size: number,
-    color: string,
-};
+type WorldProps = {
+    handleOpen : Function;
+}
 
-const World = () => {
+const World = ({handleOpen} : WorldProps) => {
     const globeEl : any = useRef();
-    const [ worldPoints, setWorldPoints ] = useState<wPoint[]>([]);
+    const [ worldPoints, setWorldPoints ] = useState<typeof ClickablePoint[]>([]);
     const ROTATION_SPEED = 500;
 
     useEffect(() => {
@@ -32,7 +29,7 @@ const World = () => {
         labelsData={worldPoints}
         labelLat={(d : any) => d.lat}
         labelLng={(d : any) => d.lng}
-        labelText={(d : any) => d.name}
+        labelText={(d : any) => d.loc}
         labelSize={(d : any) => 0.5 + d.size}
         labelDotRadius={(d : any) => 0.5 + d.size}
         labelColor={() => "rgba(255, 165, 0, 0.75)"}
@@ -44,6 +41,7 @@ const World = () => {
                 altitude: 1,
               };
             globeEl?.current?.pointOfView(MAP_CENTER, ROTATION_SPEED);
+            handleOpen(d.description);
         }}/>
     )
 }
