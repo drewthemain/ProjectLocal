@@ -1,7 +1,7 @@
 import { useRef, useState, useEffect } from "react";
 import Globe from 'react-globe.gl';
 import points from "./points";
-import ClickablePoint from './Types/points';
+import ClickablePoint from '../Types/points.d'
 
 type WorldProps = {
     handleOpen : Function;

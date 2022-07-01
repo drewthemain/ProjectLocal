@@ -1,6 +1,6 @@
 import World from './Globe';
 import PointModal from './PointModal';
-import useModal from './Hooks/useModal';
+import useModal from '../Hooks/useModal';
 
 export default function Picker() {
 

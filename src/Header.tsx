@@ -1,6 +1,6 @@
 import { AppBar, Toolbar, Typography, Button } from "@mui/material";
 import styled from "@emotion/styled";
-import { Link as RouterLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const MainHeader = styled(AppBar)`
     background: #0A0908;
@@ -25,28 +25,31 @@ const HeaderButton = styled(Button)`
 const headerOptions = [
     {
       label: "Picker",
-      href: "picker",
+      location: "picker",
+
     },
     {
       label: "Purpose",
-      href: "purpose",
+      location: "purpose",
     },
     {
       label: "Help",
-      href: "help",
+      location: "help",
     },
   ];
 
 export default function Header() {
+  const navigate = useNavigate();
 
     const getMenuButtons = () => {
-        return headerOptions.map(({ label, href }) => {
+        return headerOptions.map(({ label, location }) => {
           return (
             <HeaderButton
               {...{
                 key: label,
-                to: href,
-              }}
+                onClick: () => navigate(`/${location}`)
+              }
+            }
             >
               {label}
             </HeaderButton>
