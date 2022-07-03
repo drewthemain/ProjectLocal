@@ -9,6 +9,7 @@ export default function Switcher() {
 
     return (
         <Routes>
+            <Route path="" element={<Picker />} />
             <Route path="picker" element={<Picker />} />
             <Route path="reader/:storyId" element={<Reader />} />
             <Route path="*" element={<Error />} />

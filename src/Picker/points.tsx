@@ -1,4 +1,6 @@
-const points  = [
+import { ClickablePoint } from "../Types/points";
+
+const points : ClickablePoint[]  = [
     {
         loc: "",
         lat: 32.1656,
@@ -10,7 +12,8 @@ const points  = [
           fullLoc: "Georgia, USA",
           year: 1979,
           caption: '"Many men go fishing all of their lives without knowing that it is not fish they are after.” - Henry David Thoreau',
-          storyId: "ridge"
+          storyId: "0",
+          path: "New/TheRidge",
         }
       },
       {
@@ -24,21 +27,23 @@ const points  = [
           fullLoc: "Washington, USA",
           year: 2011,
           caption: '“Dogs are better than human beings because they know but do not tell.” - Emily Dickinson',
-          storyId: "dogs"
+          storyId: "1",
+          path: "New/Dogs",
         }
       },
       {
         loc: "",
-        lat: 51.2538,
-        lng: -85.3232,
+        lat: 6.2476,
+        lng: -75.5658,
         size: 0.1,
         color: "white",
         description: {
           title: "Half-Sleep",
-          fullLoc: "Ontario, Canada",
+          fullLoc: "Medellín, Colombia",
           year: 2007,
           caption: '“Let’s begin by taking a smallish nap or two…” - Winnie The Pooh',
-          storyId: "sleep"
+          storyId: "2",
+          path: "New/HalfSleep",
         }
       },
       {
@@ -52,7 +57,8 @@ const points  = [
           fullLoc: "North Carolina, USA",
           year: 2015,
           caption: '“The why of murder always fascinates me so much more than the how.” - Ann Rule',
-          storyId: "earbuds"
+          storyId: "3",
+          path: "New/Earbuds",
         }
       },
       {
@@ -66,7 +72,8 @@ const points  = [
           fullLoc: "A Small Village, Eastern France",
           year: 1919,
           caption: '“Death may be the greatest of all human blessings.” - Socrates',
-          storyId: "forever"
+          storyId: "4",
+          path: "Crescent/Forever",
         }
       },
       {
@@ -80,7 +87,8 @@ const points  = [
           fullLoc: "London, UK",
           year: 2001,
           caption: '“We are always the same age inside.” - Gertrude Stein',
-          storyId: "tad"
+          storyId: "5",
+          path: "Crescent/JustATadOffTheTop",
         }
       },
       {
@@ -94,7 +102,8 @@ const points  = [
           fullLoc: "Massachusetts, USA",
           year: 1999,
           caption: '“We’re all ghosts. We all carry, inside us, people who came before us.” - Liam Callanan',
-          storyId: "woodwalkers"
+          storyId: "6",
+          path: "Crescent/Woodwalkers",
         }
       },
       {
@@ -108,7 +117,8 @@ const points  = [
           fullLoc: "New York City, USA",
           year: 2013,
           caption: '“I want to be a part of it: New York, New York” - Frank Sinatra',
-          storyId: "free"
+          storyId: "7",
+          path: "Crescent/ForYouItsFree",
         }
       },
       {
@@ -122,7 +132,8 @@ const points  = [
           fullLoc: "Alberta, Canada",
           year: 2002,
           caption: '“Caves are whimsical things.” - William Stone',
-          storyId: "lutgo"
+          storyId: "8",
+          path: "Quarter/LutgoCave"
         }
       },
       {
@@ -136,7 +147,8 @@ const points  = [
           fullLoc: "Near Bergen, Norway",
           year: 1975,
           caption: '“This life is like a swimming pool. You dive into the water, but you can’t see how deep it is.” - Dennis Rodman',
-          storyId: "tickle"
+          storyId: "9",
+          path: "Quarter/Tickle",
         }
       },
       {
@@ -150,21 +162,23 @@ const points  = [
           fullLoc: "Perth, Australia",
           year: 1963,
           caption: '“In a thousand years archeologists will dig up tanning beds and think we fried people as punishment.” - Olivia Wilde',
-          storyId: "uv"
+          storyId: "10",
+          path: "Quarter/UV",
         }
       },
       {
         loc: "",
-        lat: 48.860611,
-        lng: 2.337644,
+        lat: -23.5558,
+        lng: -46.6396,
         size: 0.1,
         color: "white",
         description: {
           title: "The Janitor Game",
-          fullLoc: "Paris, France",
+          fullLoc: "São Paulo, Brazil",
           year: 1996,
           caption: '“A museum is a place where one should lose one’s head.” - Renzo Piano',
-          storyId: "janitor"
+          storyId: "11",
+          path: "Quarter/TheJanitorGame",
         }
       },
       {
@@ -178,7 +192,8 @@ const points  = [
           fullLoc: "West Virginia, USA",
           year: 1971,
           caption: '“The wheels on the bus go round and round, round and round, round and round.” - Verna Hills',
-          storyId: "route"
+          storyId: "12",
+          path: "Gibbous/Route47",
         }
       },
       {
@@ -192,7 +207,8 @@ const points  = [
           fullLoc: "Durban, South Africa",
           year: 2019,
           caption: '“Always make the audience suffer as much as possible.” - Alfred Hitchcock',
-          storyId: "rated"
+          storyId: "13",
+          path: "Gibbous/RatedR",
         }
       },
       {
@@ -206,7 +222,8 @@ const points  = [
           fullLoc: "Montana, USA",
           year: 2020,
           caption: '“An almost perfect relationship with his father was the earthly root of all wisdom.” - C.S. Lewis',
-          storyId: "father"
+          storyId: "14",
+          path: "Gibbous/FathersDay",
         }
       },
       {
@@ -220,7 +237,68 @@ const points  = [
           fullLoc: "Michigan, USA",
           year: 2010,
           caption: '“Children have always learned and created places for themselves through play.” - Donna R. Barnes',
-          storyId: "ghosts"
+          storyId: "15",
+          path: "Gibbous/GhostsInTheGraveyard",
+        }
+      },
+      {
+        loc: "",
+        lat: 32.3182,
+        lng: -86.9023,
+        size: 0.1,
+        color: "white",
+        description: {
+          title: "Local Z",
+          fullLoc: "Alabama, USA",
+          year: 2016,
+          caption: '“College isn’t the place to go for ideas.” - Helen Keller',
+          storyId: "16",
+          path: "Full/LocalZ",
+        }
+      },
+      {
+        loc: "",
+        lat: 51.1657,
+        lng: 10.4515,
+        size: 0.1,
+        color: "white",
+        description: {
+          title: "Mimicry",
+          fullLoc: "Unknown, Germany",
+          year: 1965,
+          caption: '“Extinction is the rule. Survival is the exception.” - Carl Sagan',
+          storyId: "17",
+          path: "Full/Mimicry",
+        }
+      },
+      {
+        loc: "",
+        lat: 34.0522,
+        lng: -118.2437,
+        size: 0.1,
+        color: "white",
+        description: {
+          title: "A Glass House and a Pebble",
+          fullLoc: "California, USA",
+          year: 2021,
+          caption: '“The greatest gift of life is friendship, and I have received it.” - Hubert H. Humphrey',
+          storyId: "18",
+          path: "Full/AGlassHouseAndAPebble",
+        }
+      },
+      {
+        loc: "",
+        lat: 35.6762,
+        lng: 139.6503,
+        size: 0.1,
+        color: "white",
+        description: {
+          title: "A Smiling Moon",
+          fullLoc: "Tokyo, Japan",
+          year: 2041,
+          caption: '“We ran as if to meet the moon.” - Robert Frost',
+          storyId: "19",
+          path: "Full/ASmilingMoon",
         }
       },
 ];

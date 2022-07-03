@@ -4,6 +4,7 @@ export type PointDescriptor = {
     year: number,
     caption: string,
     storyId: string,
+    path: string,
 }
 
 export type ClickablePoint = {
