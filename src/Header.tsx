@@ -33,8 +33,8 @@ const headerOptions = [
       location: "purpose",
     },
     {
-      label: "Help",
-      location: "help",
+      label: "Contact",
+      location: "contact",
     },
   ];
 

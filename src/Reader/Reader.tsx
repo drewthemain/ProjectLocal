@@ -10,7 +10,7 @@ const Background = styled('div')`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #EAE0D5;
+    background-color: #0A0908;
 `
 
 export default function Reader() {
@@ -49,18 +49,18 @@ export default function Reader() {
 
     return (
         <Background>
-            {story && <div style={{marginTop: 100}}>
+            {story && <div style={{marginTop: 100, marginBottom: 200}}>
 
                     <Container>
-                        <Typography variant="h1">{`${story?.title}`}</Typography>
-                        <Typography variant="h3">{`${story?.fullLoc}`}</Typography>
-                        <Typography variant="h4" style={{marginTop: 20}}>{`${story?.year}`}</Typography>
-                        <Typography variant="h5" style={{marginTop: 20}}>{`${story?.caption}`}</Typography>
+                        <Typography variant="h1" color="#EE5622">{`${story?.title}`}</Typography>
+                        <Typography variant="h3" color="#EE5622">{`${story?.fullLoc}`}</Typography>
+                        <Typography variant="h3" color="#EE5622" style={{marginTop: 20}}>{`${story?.year}`}</Typography>
+                        <Typography variant="h5" color="#DE6449" style={{marginTop: 20}}>{`${story?.caption}`}</Typography>
                     </Container>
 
                     <Container style={{marginTop: 30}}>
                         {text?.split(/\r\n|\n/).map((line, index) => (
-                            <Typography key={index} variant="body1" style={{alignContent:"left", marginBottom: 20}}>{`${line}`}</Typography>
+                            <Typography key={index} variant="body1" color="#EAE0D5" style={{alignContent:"left", marginBottom: 20, fontWeight: 700}}>{`${line}`}</Typography>
                         ))}
                     </Container>
                     
