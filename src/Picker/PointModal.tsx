@@ -9,6 +9,7 @@ const ModalBodyOuter = styled(Paper)`
     top: 50%;
     left: 50%;
     background-color: #0A0908;
+    outline: none;
 `;
 
 const ModalTitle = styled(Typography)`

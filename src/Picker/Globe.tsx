@@ -32,7 +32,7 @@ const World = ({handleOpen} : WorldProps) => {
         labelText={(d : any) => d.loc}
         labelSize={(d : any) => 0.5 + d.size}
         labelDotRadius={(d : any) => 0.5 + d.size}
-        labelColor={() => "rgba(255, 165, 0, 0.75)"}
+        labelColor={(d : any) => d.color}
         labelResolution={2}
         onLabelClick={(d : any) => {
             const MAP_CENTER = {

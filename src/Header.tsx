@@ -1,6 +1,8 @@
 import { AppBar, Toolbar, Typography, Button } from "@mui/material";
 import styled from "@emotion/styled";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
+import points from "./Picker/points";
+import { useEffect } from "react";
 
 const MainHeader = styled(AppBar)`
     background: #0A0908;
@@ -33,13 +35,19 @@ const headerOptions = [
       location: "purpose",
     },
     {
-      label: "Contact",
-      location: "contact",
+      label: "Surprise Me",
+      location: "",
     },
   ];
 
 export default function Header() {
   const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    const maxInd : number = points.length;
+    headerOptions[2].location = `reader/${Math.floor(Math.random() * (maxInd))}`;
+  },[location])
 
     const getMenuButtons = () => {
         return headerOptions.map(({ label, location }) => {

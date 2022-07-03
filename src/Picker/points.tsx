@@ -6,7 +6,7 @@ const points : ClickablePoint[]  = [
         lat: 32.1656,
         lng: -82.9001,
         size: 0.1,
-        color: "white",
+        color: "#EE5622",
         description: {
           title: "The Ridge",
           fullLoc: "Georgia, USA",
@@ -51,7 +51,7 @@ const points : ClickablePoint[]  = [
         lat: 35.7596,
         lng: -79.0193,
         size: 0.1,
-        color: "white",
+        color: "#EE5622",
         description: {
           title: "Earbuds",
           fullLoc: "North Carolina, USA",
@@ -81,7 +81,7 @@ const points : ClickablePoint[]  = [
         lat: 51.5072,
         lng: -0.1276,
         size: 0.1,
-        color: "white",
+        color: "#EE5622",
         description: {
           title: "Just A Tad Off The Top",
           fullLoc: "London, UK",
@@ -261,7 +261,7 @@ const points : ClickablePoint[]  = [
         lat: 51.1657,
         lng: 10.4515,
         size: 0.1,
-        color: "white",
+        color: "#EE5622",
         description: {
           title: "Mimicry",
           fullLoc: "Unknown, Germany",

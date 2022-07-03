@@ -24,6 +24,11 @@ export default function Purpose() {
                         <Typography variant="h5" color="#EAE0D5" style={{alignContent:"left", marginBottom: 50, fontWeight: 700}}>While Project Local is currenly focused on showing my work, the initial plan was for this platform to evolve into something bigger. My goal is to allow all users to create points of interest and turn Project Local into a hub for urgan legends, local myths, and true tales all tied to a location. User's will only be able to upload stories to their current location on the globe, encouraging the cultivation of location-based horror. There are plenty of stories to be told and being able to visualize them on a map will only heighten the experience.</Typography>
                         <Typography variant="h5" color="#EAE0D5" style={{alignContent:"left", marginBottom: 20, fontWeight: 700}}>As this project evolves, it will always remain a hub for short horror and the intrigue that comes along with it. Horror is forever changing and forever exciting, and Project Local will be an extension of that. Thank you for visiting. Read on.</Typography>
                     </Container>
+
+                    <Container style={{marginTop: 30}}>
+                        <Typography variant="h5" color="#EAE0D5" style={{alignContent:"left", marginBottom: 10, fontWeight: 700}}>Have concerns? Questions? Want to talk?</Typography>
+                        <Typography variant="h5" color="#EAE0D5" style={{alignContent:"left", marginBottom: 50, fontWeight: 700}}>Email me at 1drewbug12345@gmail.com. I want to hear from you.</Typography>
+                    </Container>
             </div>  
         </Background>
     )
