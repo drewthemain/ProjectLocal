@@ -14,6 +14,8 @@ const points : ClickablePoint[]  = [
           caption: '"Many men go fishing all of their lives without knowing that it is not fish they are after.” - Henry David Thoreau',
           storyId: "0",
           path: "New/TheRidge",
+          firstImg: "",
+          lastImg: "",
         }
       },
       {
@@ -29,6 +31,8 @@ const points : ClickablePoint[]  = [
           caption: '“Dogs are better than human beings because they know but do not tell.” - Emily Dickinson',
           storyId: "1",
           path: "New/Dogs",
+          firstImg: "",
+          lastImg: "",
         }
       },
       {
@@ -44,6 +48,8 @@ const points : ClickablePoint[]  = [
           caption: '“Let’s begin by taking a smallish nap or two…” - Winnie The Pooh',
           storyId: "2",
           path: "New/HalfSleep",
+          firstImg: "",
+          lastImg: "",
         }
       },
       {
@@ -59,6 +65,8 @@ const points : ClickablePoint[]  = [
           caption: '“The why of murder always fascinates me so much more than the how.” - Ann Rule',
           storyId: "3",
           path: "New/Earbuds",
+          firstImg: "",
+          lastImg: "",
         }
       },
       {
@@ -74,6 +82,8 @@ const points : ClickablePoint[]  = [
           caption: '“Death may be the greatest of all human blessings.” - Socrates',
           storyId: "4",
           path: "Crescent/Forever",
+          firstImg: "",
+          lastImg: "",
         }
       },
       {
@@ -89,6 +99,8 @@ const points : ClickablePoint[]  = [
           caption: '“We are always the same age inside.” - Gertrude Stein',
           storyId: "5",
           path: "Crescent/JustATadOffTheTop",
+          firstImg: "",
+          lastImg: "",
         }
       },
       {
@@ -104,6 +116,8 @@ const points : ClickablePoint[]  = [
           caption: '“We’re all ghosts. We all carry, inside us, people who came before us.” - Liam Callanan',
           storyId: "6",
           path: "Crescent/Woodwalkers",
+          firstImg: "",
+          lastImg: "",
         }
       },
       {
@@ -119,6 +133,8 @@ const points : ClickablePoint[]  = [
           caption: '“I want to be a part of it: New York, New York” - Frank Sinatra',
           storyId: "7",
           path: "Crescent/ForYouItsFree",
+          firstImg: "",
+          lastImg: "",
         }
       },
       {
@@ -133,7 +149,9 @@ const points : ClickablePoint[]  = [
           year: 2002,
           caption: '“Caves are whimsical things.” - William Stone',
           storyId: "8",
-          path: "Quarter/LutgoCave"
+          path: "Quarter/LutgoCave",
+          firstImg: "",
+          lastImg: "",
         }
       },
       {
@@ -149,6 +167,8 @@ const points : ClickablePoint[]  = [
           caption: '“This life is like a swimming pool. You dive into the water, but you can’t see how deep it is.” - Dennis Rodman',
           storyId: "9",
           path: "Quarter/Tickle",
+          firstImg: "",
+          lastImg: "",
         }
       },
       {
@@ -164,6 +184,8 @@ const points : ClickablePoint[]  = [
           caption: '“In a thousand years archeologists will dig up tanning beds and think we fried people as punishment.” - Olivia Wilde',
           storyId: "10",
           path: "Quarter/UV",
+          firstImg: "",
+          lastImg: "",
         }
       },
       {
@@ -179,6 +201,8 @@ const points : ClickablePoint[]  = [
           caption: '“A museum is a place where one should lose one’s head.” - Renzo Piano',
           storyId: "11",
           path: "Quarter/TheJanitorGame",
+          firstImg: "",
+          lastImg: "",
         }
       },
       {
@@ -194,6 +218,8 @@ const points : ClickablePoint[]  = [
           caption: '“The wheels on the bus go round and round, round and round, round and round.” - Verna Hills',
           storyId: "12",
           path: "Gibbous/Route47",
+          firstImg: "",
+          lastImg: "",
         }
       },
       {
@@ -209,6 +235,8 @@ const points : ClickablePoint[]  = [
           caption: '“Always make the audience suffer as much as possible.” - Alfred Hitchcock',
           storyId: "13",
           path: "Gibbous/RatedR",
+          firstImg: "",
+          lastImg: "",
         }
       },
       {
@@ -224,6 +252,8 @@ const points : ClickablePoint[]  = [
           caption: '“An almost perfect relationship with his father was the earthly root of all wisdom.” - C.S. Lewis',
           storyId: "14",
           path: "Gibbous/FathersDay",
+          firstImg: "",
+          lastImg: "",
         }
       },
       {
@@ -239,6 +269,8 @@ const points : ClickablePoint[]  = [
           caption: '“Children have always learned and created places for themselves through play.” - Donna R. Barnes',
           storyId: "15",
           path: "Gibbous/GhostsInTheGraveyard",
+          firstImg: "",
+          lastImg: "",
         }
       },
       {
@@ -254,6 +286,8 @@ const points : ClickablePoint[]  = [
           caption: '“College isn’t the place to go for ideas.” - Helen Keller',
           storyId: "16",
           path: "Full/LocalZ",
+          firstImg: "",
+          lastImg: "",
         }
       },
       {
@@ -269,6 +303,8 @@ const points : ClickablePoint[]  = [
           caption: '“Extinction is the rule. Survival is the exception.” - Carl Sagan',
           storyId: "17",
           path: "Full/Mimicry",
+          firstImg: "",
+          lastImg: "",
         }
       },
       {
@@ -284,6 +320,8 @@ const points : ClickablePoint[]  = [
           caption: '“The greatest gift of life is friendship, and I have received it.” - Hubert H. Humphrey',
           storyId: "18",
           path: "Full/AGlassHouseAndAPebble",
+          firstImg: "",
+          lastImg: "",
         }
       },
       {
@@ -299,6 +337,8 @@ const points : ClickablePoint[]  = [
           caption: '“We ran as if to meet the moon.” - Robert Frost',
           storyId: "19",
           path: "Full/ASmilingMoon",
+          firstImg: "",
+          lastImg: "",
         }
       },
 ];

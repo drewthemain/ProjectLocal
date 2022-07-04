@@ -5,6 +5,8 @@ export type PointDescriptor = {
     caption: string,
     storyId: string,
     path: string,
+    firstImg: string,
+    lastImg: string,
 }
 
 export type ClickablePoint = {
