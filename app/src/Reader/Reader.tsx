@@ -58,11 +58,19 @@ export default function Reader() {
                         <Typography variant="h5" color="#DE6449" style={{marginTop: 20}}>{`${story?.caption}`}</Typography>
                     </Container>
 
+                    <div style={{display: 'flex', justifyContent: 'center', margin: 50}}>
+                        <img src={require(`../../StoryPictures/${story?.firstImg}.png`)} width={500} height={500} style={{alignContent:"center", alignItems:"center"}} />
+                    </div>
+
                     <Container style={{marginTop: 30}}>
                         {text?.split(/\r\n|\n/).map((line, index) => (
                             <Typography key={index} variant="body1" color="#EAE0D5" style={{alignContent:"left", marginBottom: 20, fontWeight: 700}}>{`${line}`}</Typography>
                         ))}
                     </Container>
+
+                    <div style={{display: 'flex', justifyContent: 'center', margin: 50}}>
+                        <img src={require(`../../StoryPictures/${story?.lastImg}.png`)} width={500} height={500} style={{alignContent:"center", alignItems:"center"}} />
+                    </div>
                     
                 </div>
             }   
