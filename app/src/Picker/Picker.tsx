@@ -7,7 +7,7 @@ export default function Picker() {
     const {modalState, modalDescriptor, handleOpen, handleClose} = useModal();
 
     return (
-        <div>
+        <div style={{color:"black"}}>
             <World handleOpen={handleOpen}/>
             <PointModal modalState={modalState} handleClose={handleClose} modalDescriptor={modalDescriptor}/>
         </div>

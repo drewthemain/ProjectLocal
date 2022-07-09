@@ -1,5 +1,4 @@
-import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes} from 'react-router-dom';
 
 import Picker from './Picker/Picker';
 import Purpose from './Purpose';
@@ -9,12 +8,14 @@ import Error from './Error';
 export default function Switcher() {
 
     return (
-        <Routes>
-            <Route path="" element={<Picker />} />
-            <Route path="picker" element={<Picker />} />
-            <Route path="purpose" element={<Purpose />} />
-            <Route path="reader/:storyId" element={<Reader />} />
-            <Route path="*" element={<Error />} />
-        </Routes>
+        <div style={{display:"flex", justifyContent: "center", alignItems: "center", backgroundColor: "#0A0908"}}>
+            <Routes>
+                <Route path="" element={<Picker />} />
+                <Route path="picker" element={<Picker />} />
+                <Route path="purpose" element={<Purpose />} />
+                <Route path="reader/:id" element={<Reader />} />
+                <Route path="*" element={<Error />} />
+            </Routes>
+        </div>
     )
 }

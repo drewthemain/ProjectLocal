@@ -6,7 +6,7 @@ const points : ClickablePoint[]  = [
         lat: 32.1656,
         lng: -82.9001,
         size: 0.1,
-        color: "#EE5622",
+        color: "rgba(255, 165, 0, 0.75)",
         description: {
           title: "The Ridge",
           fullLoc: "Georgia, USA",
@@ -22,7 +22,7 @@ const points : ClickablePoint[]  = [
         loc: "",
         lat: 47.7511,
         lng: -120.7401,
-        size: 0.1,
+        size: 0.5,
         color: "white",
         description: {
           title: "Dogs",
@@ -39,7 +39,7 @@ const points : ClickablePoint[]  = [
         loc: "",
         lat: 6.2476,
         lng: -75.5658,
-        size: 0.1,
+        size: 0.2,
         color: "white",
         description: {
           title: "Half-Sleep",
@@ -56,8 +56,8 @@ const points : ClickablePoint[]  = [
         loc: "",
         lat: 35.7596,
         lng: -79.0193,
-        size: 0.1,
-        color: "#EE5622",
+        size: 0.3,
+        color: "rgba(255, 165, 0, 0.75)",
         description: {
           title: "Earbuds",
           fullLoc: "North Carolina, USA",
@@ -91,7 +91,7 @@ const points : ClickablePoint[]  = [
         lat: 51.5072,
         lng: -0.1276,
         size: 0.1,
-        color: "#EE5622",
+        color: "rgba(255, 165, 0, 0.75)",
         description: {
           title: "Just A Tad Off The Top",
           fullLoc: "London, UK",
@@ -107,7 +107,7 @@ const points : ClickablePoint[]  = [
         loc: "",
         lat: 42.4072,
         lng: -71.3824,
-        size: 0.1,
+        size: 0.2,
         color: "white",
         description: {
           title: "Woodwalkers",
@@ -141,7 +141,7 @@ const points : ClickablePoint[]  = [
         loc: "",
         lat: 54.240905,
         lng: -114.951658,
-        size: 0.1,
+        size: 0.2,
         color: "white",
         description: {
           title: "Lutgo Cave",
@@ -192,7 +192,7 @@ const points : ClickablePoint[]  = [
         loc: "",
         lat: -23.5558,
         lng: -46.6396,
-        size: 0.1,
+        size: 0.3,
         color: "white",
         description: {
           title: "The Janitor Game",
@@ -209,7 +209,7 @@ const points : ClickablePoint[]  = [
         loc: "",
         lat: 38.597626,
         lng: -80.454903,
-        size: 0.1,
+        size: 0.8,
         color: "white",
         description: {
           title: "Route 47",
@@ -226,7 +226,7 @@ const points : ClickablePoint[]  = [
         loc: "",
         lat: -29.8587,
         lng: 31.049999,
-        size: 0.1,
+        size: 0.2,
         color: "white",
         description: {
           title: "Rated-R",
@@ -243,7 +243,7 @@ const points : ClickablePoint[]  = [
         loc: "",
         lat: 46.8797,
         lng: -110.3626,
-        size: 0.1,
+        size: 0.2,
         color: "white",
         description: {
           title: "Father's Day",
@@ -260,7 +260,7 @@ const points : ClickablePoint[]  = [
         loc: "",
         lat: 42.331429,
         lng: -83.045753,
-        size: 0.1,
+        size: 0.7,
         color: "white",
         description: {
           title: "Ghosts In The Graveyard",
@@ -277,7 +277,7 @@ const points : ClickablePoint[]  = [
         loc: "",
         lat: 32.3182,
         lng: -86.9023,
-        size: 0.1,
+        size: 0.6,
         color: "white",
         description: {
           title: "Local Z",
@@ -295,7 +295,7 @@ const points : ClickablePoint[]  = [
         lat: 51.1657,
         lng: 10.4515,
         size: 0.1,
-        color: "#EE5622",
+        color: "rgba(255, 165, 0, 0.75)",
         description: {
           title: "Mimicry",
           fullLoc: "Unknown, Germany",
@@ -311,7 +311,7 @@ const points : ClickablePoint[]  = [
         loc: "",
         lat: 34.0522,
         lng: -118.2437,
-        size: 0.1,
+        size: 0.8,
         color: "white",
         description: {
           title: "A Glass House and a Pebble",
@@ -328,7 +328,7 @@ const points : ClickablePoint[]  = [
         loc: "",
         lat: 35.6762,
         lng: 139.6503,
-        size: 0.1,
+        size: 0.3,
         color: "white",
         description: {
           title: "A Smiling Moon",
