@@ -32,7 +32,7 @@ const points : ClickablePoint[]  = [
           storyId: "1",
           path: "New/Dogs",
           firstImg: "dogs2",
-          lastImg: "dogs1",
+          lastImg: "dogs3",
         }
       },
       {
@@ -49,7 +49,7 @@ const points : ClickablePoint[]  = [
           storyId: "2",
           path: "New/HalfSleep",
           firstImg: "sleep1",
-          lastImg: "sleep3",
+          lastImg: "sleep4",
         }
       },
       {
@@ -66,7 +66,7 @@ const points : ClickablePoint[]  = [
           storyId: "3",
           path: "New/Earbuds",
           firstImg: "earbuds1",
-          lastImg: "earbuds2",
+          lastImg: "earbuds3",
         }
       },
       {
@@ -82,8 +82,8 @@ const points : ClickablePoint[]  = [
           caption: '“Death may be the greatest of all human blessings.” - Socrates',
           storyId: "4",
           path: "Crescent/Forever",
-          firstImg: "forever2",
-          lastImg: "forever3",
+          firstImg: "forever3",
+          lastImg: "forever4",
         }
       },
       {
@@ -100,7 +100,7 @@ const points : ClickablePoint[]  = [
           storyId: "5",
           path: "Crescent/JustATadOffTheTop",
           firstImg: "tad1",
-          lastImg: "tad2",
+          lastImg: "tad3",
         }
       },
       {
@@ -116,7 +116,7 @@ const points : ClickablePoint[]  = [
           caption: '“We’re all ghosts. We all carry, inside us, people who came before us.” - Liam Callanan',
           storyId: "6",
           path: "Crescent/Woodwalkers",
-          firstImg: "wood1",
+          firstImg: "wood3",
           lastImg: "wood2",
         }
       },
@@ -151,7 +151,7 @@ const points : ClickablePoint[]  = [
           storyId: "8",
           path: "Quarter/LutgoCave",
           firstImg: "cave2",
-          lastImg: "cave1",
+          lastImg: "cave3",
         }
       },
       {
@@ -168,7 +168,7 @@ const points : ClickablePoint[]  = [
           storyId: "9",
           path: "Quarter/Tickle",
           firstImg: "tickle2",
-          lastImg: "tickle3",
+          lastImg: "tickle4",
         }
       },
       {
@@ -218,8 +218,8 @@ const points : ClickablePoint[]  = [
           caption: '“The wheels on the bus go round and round, round and round, round and round.” - Verna Hills',
           storyId: "12",
           path: "Gibbous/Route47",
-          firstImg: "route1",
-          lastImg: "route3",
+          firstImg: "route4",
+          lastImg: "route5",
         }
       },
       {
@@ -236,7 +236,7 @@ const points : ClickablePoint[]  = [
           storyId: "13",
           path: "Gibbous/RatedR",
           firstImg: "rated3",
-          lastImg: "rated1",
+          lastImg: "rated2",
         }
       },
       {
