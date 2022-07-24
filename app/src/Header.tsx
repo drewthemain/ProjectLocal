@@ -3,9 +3,10 @@ import styled from "@emotion/styled";
 import { useNavigate, useLocation } from "react-router-dom";
 import points from "./Picker/points";
 import { useEffect } from "react";
+import { colors } from "./Style/colors";
 
 const MainHeader = styled(AppBar)`
-    background: #0A0908;
+    background: ${colors.black};
     paddingRight: 79px;
     paddingLeft: 118px;
 `;
@@ -21,7 +22,7 @@ const HeaderButton = styled(Button)`
     fontWeight: bold;
     size: 18px;
     marginLeft: 38px;
-    color: #EAE0D5;
+    color: ${colors.white};
 `;
 
 const headerOptions = [
@@ -47,6 +48,7 @@ export default function Header() {
   useEffect(() => {
     const maxInd : number = points.length;
     headerOptions[2].location = `reader/${Math.floor(Math.random() * (maxInd))}`;
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
   },[location])
 
     const getMenuButtons = () => {
@@ -73,7 +75,7 @@ export default function Header() {
     };
 
     const welcomeMessage = (
-        <Typography variant="h6" component="h1" fontWeight= "bold" color="#DE6449">
+        <Typography variant="h6" component="h1" fontWeight="bold" color={colors.lightOrange}>
         Project Local
         </Typography>
     );

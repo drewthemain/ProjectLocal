@@ -3,26 +3,27 @@ import styled from '@emotion/styled';
 import { PointDescriptor } from '../Types/points';
 import { Close } from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom';
+import { colors } from '../Style/colors';
 
 const ModalBodyOuter = styled(Paper)`
     position: absolute;
     top: 50%;
     left: 50%;
-    background-color: #0A0908;
+    background-color: ${colors.black};
     outline: none;
 `;
 
 const ModalTitle = styled(Typography)`
-    color: #EE5642;
+    color: ${colors.darkOrange};
     font-weight: bold;
 `;
 
 const ModalSub = styled(Typography)`
-    color: #EAE0D5;
+    color: ${colors.white};
 `
 
 const ModalRead = styled(Typography)`
-    color: #DE6449;
+    color: ${colors.lightOrange};
     font-weight: bold;
 `
 
@@ -49,7 +50,7 @@ export default function PointModal({modalState, handleClose, modalDescriptor} : 
                 }
             }}>
                 <ModalBodyOuter>
-                        <IconButton onClick={onClose} style={{color:'white', float:'right'}}><Close /></IconButton>
+                        <IconButton onClick={onClose} style={{color: colors.white, float:'right'}}><Close /></IconButton>
                         <ModalTitle variant="h4">{modalDescriptor.title}</ModalTitle>
                         <ModalSub variant="subtitle1">{modalDescriptor.fullLoc}</ModalSub>
                         <ModalSub variant="subtitle1">{modalDescriptor.year}</ModalSub>

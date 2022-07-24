@@ -82,8 +82,8 @@ const points : ClickablePoint[]  = [
           caption: '“Death may be the greatest of all human blessings.” - Socrates',
           storyId: "4",
           path: "Crescent/Forever",
-          firstImg: "forever3",
-          lastImg: "forever4",
+          firstImg: "forever4",
+          lastImg: "forever3",
         }
       },
       {
