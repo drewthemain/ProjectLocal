@@ -1,5 +1,4 @@
-import { Container, Typography } from "@mui/material"
-import { colors } from "../Style/colors"
+import { Container } from "@mui/material"
 import { PointDescriptor } from "../Types/points"
 import { DarkOrangeText } from "../Style/CommonComponents"
 
