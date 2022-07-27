@@ -4,6 +4,7 @@ import { PointDescriptor } from '../Types/points';
 import { Close } from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom';
 import { colors } from '../Style/colors';
+import { UnfitBackground } from '../Style/CommonComponents';
 
 const ModalBodyOuter = styled(Paper)`
     position: absolute;
@@ -55,11 +56,11 @@ export default function PointModal({modalState, handleClose, modalDescriptor} : 
                         <ModalSub variant="subtitle1">{modalDescriptor.fullLoc}</ModalSub>
                         <ModalSub variant="subtitle1">{modalDescriptor.year}</ModalSub>
                         <ModalSub variant="subtitle1">{modalDescriptor.caption}</ModalSub>
-                        <div style={{display: "flex", justifyContent:'center', alignItems: 'center'}}>
-                            <Button style={{}} onClick={() => navigate(`/reader/${modalDescriptor.storyId}`)}>
+                        <UnfitBackground>
+                            <Button sx={{ "&:hover": { backgroundColor: colors.black } }} onClick={() => navigate(`/reader/${modalDescriptor.storyId}`)}>
                                 <ModalRead variant="subtitle2">Read</ModalRead>
                             </Button>
-                        </div>
+                        </UnfitBackground>
                 </ModalBodyOuter>
             </Modal>
         </div>
