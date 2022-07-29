@@ -4,6 +4,7 @@ import Picker from './Picker/Picker';
 import Purpose from './Purpose';
 import Reader from './Reader/Reader';
 import Error from './Error';
+import StoryEditor from './Editor/StoryEditor'
 
 export default function Switcher() {
 
@@ -14,6 +15,7 @@ export default function Switcher() {
                 <Route path="picker" element={<Picker />} />
                 <Route path="purpose" element={<Purpose />} />
                 <Route path="reader/:id" element={<Reader />} />
+                <Route path="editor" element={<StoryEditor />} />
                 <Route path="*" element={<Error />} />
             </Routes>
         </div>

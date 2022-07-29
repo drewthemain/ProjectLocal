@@ -2,12 +2,14 @@ import {useEffect, useState} from "react";
 import { PointDescriptor } from "../Types/points";
 import points from "../Picker/points";
 import { useParams } from "react-router-dom";
+import { Editor, EditorState, convertFromRaw } from 'draft-js'
+import { stories } from "../Reader/stories";
 
 export default function useReader() {
     const {id} = useParams<string>();
     const [loading, setLoading] = useState<boolean>(true);
     const [story, setStory] = useState<PointDescriptor>();
-    const [text, setText] = useState<string>();
+    const [text, setText] = useState<EditorState>();
 
     useEffect(() => {
         if (story && text) {
@@ -16,21 +18,13 @@ export default function useReader() {
     },[story, id, text])
 
     useEffect(() => {
-        const fetchText = async() => {
-            try {
-                const response = await fetch(`/stories/${story?.path}.txt`)
-                const rawT = await response.text();
-                setText(rawT);
-            } catch (error) {
-                setText(error as string);
-            }
-        }
 
         if (id) {
             setStory(points[Number(id)].description);
-            if (story) {
-                fetchText();
-            }
+            const raw = convertFromRaw(stories[Number(id)]);
+            const editorRaw = EditorState.createWithContent(raw);
+            
+            setText(editorRaw);
         }
     }, [story, id, loading]);
 
