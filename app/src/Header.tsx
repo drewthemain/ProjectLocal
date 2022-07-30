@@ -39,6 +39,10 @@ const headerOptions = [
       label: "Surprise Me",
       location: "",
     },
+    {
+      label: "Editor",
+      location: "editor",
+    }
   ];
 
 export default function Header() {

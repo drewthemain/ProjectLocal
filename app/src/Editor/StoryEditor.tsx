@@ -3,6 +3,8 @@ import { Editor, EditorState, RichUtils, convertToRaw } from 'draft-js';
 import { Button, Typography } from '@mui/material';
 import styled from '@emotion/styled';
 import './EditorStyle.css';
+import { colors } from '../Style/colors';
+import { FormatUnderlined, FormatBold, FormatItalic, AutoFixNormal, Check, Refresh } from '@mui/icons-material';
 
 const EditContainer = styled('div')`
     margin: 0em;
@@ -22,6 +24,7 @@ const EditContainer = styled('div')`
     align-items: center;
     align-self: stretch;
     top: 60px;
+    background-color: ${colors.white};
 `
 
 const EditorBlock = styled('div')`
@@ -34,7 +37,7 @@ const EditorBlock = styled('div')`
     color: #2C3A51;
     font-size: 16px;
     text-align: left;
-    background-color: black;
+    background-color: ${colors.black};
     box-shadow: 0 0 5px rgba(0,0,0,.1);
     min-height: 36%;
     overflow-x:hidden;
@@ -42,6 +45,12 @@ const EditorBlock = styled('div')`
     position: relative;
     height: 40vh;
     font-size: 90%;
+`
+
+const StyleButton = styled(Button)`
+    color: ${colors.black};
+    background-color: ${colors.white};
+    margin: 5px;
 `
 
 const ButtonContainer = styled('div')`
@@ -85,17 +94,24 @@ export default function MyEditor() {
         setEditorState(RichUtils.toggleBlockType(editorState, 'header-four'));
     }
 
+    const onRefresh = () => {
+        setEditorState(EditorState.createEmpty());
+    }
+
     const onSubmit = () => {
         setDisplay(JSON.stringify(convertToRaw(editorState.getCurrentContent())));
     }
 
     return (
             <EditContainer>
-                <Typography variant='h3' align='center'>Create</Typography>
-                <Button onClick={onUnderlineClick}>U</Button>
-                <Button onClick={onBoldClick}><b>B</b></Button>
-                <Button onClick={onItalicClick}>I</Button>
-                <Button onClick={onBlockClick}>Double</Button>    
+                <Typography variant='h3' align='center'>Tell us a story.</Typography>
+                <ButtonContainer>
+                    <StyleButton onClick={onUnderlineClick}><FormatUnderlined /></StyleButton>
+                    <StyleButton onClick={onBoldClick}><FormatBold /></StyleButton>
+                    <StyleButton onClick={onItalicClick}><FormatItalic /></StyleButton>
+                    <StyleButton onClick={onBlockClick}><AutoFixNormal /></StyleButton>
+                    <StyleButton onClick={onRefresh}><Refresh /></StyleButton>
+                </ButtonContainer> 
                 <EditorBlock>
                     <Editor 
                         editorState={editorState}
@@ -104,7 +120,7 @@ export default function MyEditor() {
                         />
                 </EditorBlock>
                 <ButtonContainer>
-                    <Button onClick={onSubmit} >Submit</Button>
+                    <StyleButton onClick={onSubmit}><Check /></StyleButton>
                 </ButtonContainer>
                 <div>{display}</div>
             </EditContainer>
