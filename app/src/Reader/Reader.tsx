@@ -7,19 +7,13 @@ import { UnfitBackground, FitBackground, LightOrangeText, WhiteText } from "../S
 import { Titles } from "./Titles";
 import { StoryImage } from "./StoryImage";
 import { Editor, EditorState } from 'draft-js'
+import '../Editor/EditorStyle.css'
 
 const ReaderContainer = styled('div')`
     margin-bottom: 100px;
     background-color: ${colors.black};
     display: inline-block;
 `
-
-const styleMap = {
-    'CODE': {
-        color: '#EAE0D5',
-        marginTop: '10px',
-    },
-}
 
 export default function Reader() {
     const {loading, story, text} = useReader();
@@ -35,7 +29,9 @@ export default function Reader() {
                             <LightOrangeText variant="h6" align="center">{`${story?.caption}`}</LightOrangeText>
                         </Container>
                         <Container style={{marginTop: 30}}>
-                            <Editor editorState={text || {} as EditorState} readOnly={true} customStyleMap={styleMap} onChange={() => console.log("Loaded!")} />
+                            <Editor editorState={text || {} as EditorState} 
+                                    readOnly={true} 
+                                    onChange={() => console.log("Loaded!")} />
                         </Container>
                         <StoryImage img={story?.lastImg} />
                     </ReaderContainer>

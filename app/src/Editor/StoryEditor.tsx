@@ -3,6 +3,8 @@ import { useState } from 'react';
 import { Editor, EditorState, RichUtils, convertToRaw, ContentState } from 'draft-js';
 import { Button, Typography } from '@mui/material';
 import styled from '@emotion/styled';
+import { WhiteText } from '../Style/CommonComponents';
+import './EditorStyle.css';
 
 const EditContainer = styled('div')`
     margin: 0em;
@@ -34,7 +36,7 @@ const EditorBlock = styled('div')`
     color: #2C3A51;
     font-size: 16px;
     text-align: left;
-    background-color: white;
+    background-color: black;
     box-shadow: 0 0 5px rgba(0,0,0,.1);
     min-height: 36%;
     overflow-x:hidden;
@@ -43,13 +45,6 @@ const EditorBlock = styled('div')`
     height: 40vh;
     font-size: 90%;
 `
-
-const styleMap = {
-    'CODE': {
-        color: '#EAE0D5',
-        marginTop: '10px',
-    },
-}
 
 export default function MyEditor() {
 
@@ -81,8 +76,8 @@ export default function MyEditor() {
         setEditorState(RichUtils.toggleInlineStyle(editorState, 'ITALIC'));
     }
 
-    const onWhiteClick = () => {
-        setEditorState(RichUtils.toggleInlineStyle(editorState, 'CODE'));
+    const onBlockClick = () => {
+        setEditorState(RichUtils.toggleBlockType(editorState, 'header-four'));
     }
 
     const onSubmit = () => {
@@ -99,11 +94,10 @@ export default function MyEditor() {
                 <Button onClick={onUnderlineClick}>U</Button>
                 <Button onClick={onBoldClick}><b>B</b></Button>
                 <Button onClick={onItalicClick}>I</Button>
-                <Button onClick={onWhiteClick}>White</Button>    
+                <Button onClick={onBlockClick}>Double</Button>    
                 <EditorBlock>
                     <Editor 
                         editorState={editorState}
-                        customStyleMap={styleMap}
                         handleKeyCommand={handleKeyCommand}
                         onChange= {setEditorState}
                         />

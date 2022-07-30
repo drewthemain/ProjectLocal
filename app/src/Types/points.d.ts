@@ -4,7 +4,6 @@ export type PointDescriptor = {
     year: number,
     caption: string,
     storyId: string,
-    path: string,
     firstImg: string,
     lastImg: string,
 }
