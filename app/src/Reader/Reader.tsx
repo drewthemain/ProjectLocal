@@ -3,7 +3,7 @@ import { Container } from "@mui/material";
 import useReader from "../Hooks/useReader";
 import Footer from "../Footer";
 import { colors } from "../Style/colors";
-import { UnfitBackground, FitBackground, LightOrangeText, WhiteText } from "../Style/CommonComponents";
+import { UnfitBackground, FitBackground, LightOrangeText } from "../Style/CommonComponents";
 import { Titles } from "./Titles";
 import { StoryImage } from "./StoryImage";
 import { Editor, EditorState } from 'draft-js'

@@ -2,7 +2,7 @@ import {useEffect, useState} from "react";
 import { PointDescriptor } from "../Types/points";
 import points from "../Picker/points";
 import { useParams } from "react-router-dom";
-import { Editor, EditorState, convertFromRaw } from 'draft-js'
+import { EditorState, convertFromRaw } from 'draft-js'
 import { stories } from "../Reader/stories";
 
 export default function useReader() {

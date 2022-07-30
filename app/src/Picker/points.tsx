@@ -45,8 +45,8 @@ const points : ClickablePoint[]  = [
           year: 2007,
           caption: '“Let’s begin by taking a smallish nap or two…” - Winnie The Pooh',
           storyId: "2",
-          firstImg: "sleep1",
-          lastImg: "sleep4",
+          firstImg: "sleep4",
+          lastImg: "sleep1",
         }
       },
       {

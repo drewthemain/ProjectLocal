@@ -1,9 +1,7 @@
-import React, { useEffect } from 'react';
 import { useState } from 'react';
-import { Editor, EditorState, RichUtils, convertToRaw, ContentState } from 'draft-js';
+import { Editor, EditorState, RichUtils, convertToRaw } from 'draft-js';
 import { Button, Typography } from '@mui/material';
 import styled from '@emotion/styled';
-import { WhiteText } from '../Style/CommonComponents';
 import './EditorStyle.css';
 
 const EditContainer = styled('div')`
@@ -44,6 +42,13 @@ const EditorBlock = styled('div')`
     position: relative;
     height: 40vh;
     font-size: 90%;
+`
+
+const ButtonContainer = styled('div')`
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 10px;
 `
 
 export default function MyEditor() {
@@ -87,10 +92,6 @@ export default function MyEditor() {
     return (
             <EditContainer>
                 <Typography variant='h3' align='center'>Create</Typography>
-                <div style={{display: 'flex', alignContent: 'center', justifyContent:'center', margin: 10}}>
-                    <Typography variant='body1'>Story Id:</Typography>
-                    <input type="text" name="name" onChange={e => setId(e.target.value)} value={id}/>
-                </div>
                 <Button onClick={onUnderlineClick}>U</Button>
                 <Button onClick={onBoldClick}><b>B</b></Button>
                 <Button onClick={onItalicClick}>I</Button>
@@ -102,9 +103,9 @@ export default function MyEditor() {
                         onChange= {setEditorState}
                         />
                 </EditorBlock>
-                <div style={{display: 'flex', alignContent: 'center', justifyContent:'center', margin: 10}}>
+                <ButtonContainer>
                     <Button onClick={onSubmit} >Submit</Button>
-                </div>
+                </ButtonContainer>
                 <div>{display}</div>
             </EditContainer>
     )
