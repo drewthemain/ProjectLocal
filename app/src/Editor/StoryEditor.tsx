@@ -61,8 +61,7 @@ const ButtonContainer = styled('div')`
 `
 
 export default function MyEditor() {
-
-    const [id, setId] = useState('');
+    
     const [editorState, setEditorState] = useState(() =>
         EditorState.createEmpty()
     );
@@ -96,6 +95,7 @@ export default function MyEditor() {
 
     const onRefresh = () => {
         setEditorState(EditorState.createEmpty());
+        setDisplay("");
     }
 
     const onSubmit = () => {
