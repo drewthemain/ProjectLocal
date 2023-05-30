@@ -105,6 +105,8 @@ export default function MyEditor() {
     return (
             <EditContainer>
                 <Typography variant='h3' align='center'>Tell us a story.</Typography>
+                <br></br>
+                <Typography variant='h5' align='center'>This page serves as a way to edit text using Draft.js and gives a properly formatted block structure to display upon webpages.</Typography>
                 <ButtonContainer>
                     <StyleButton onClick={onUnderlineClick}><FormatUnderlined /></StyleButton>
                     <StyleButton onClick={onBoldClick}><FormatBold /></StyleButton>
