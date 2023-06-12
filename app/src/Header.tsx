@@ -25,6 +25,7 @@ const HeaderButton = styled(Button)`
     color: ${colors.white};
 `;
 
+// Designates each header option with navigation location
 const headerOptions = [
     {
       label: "Picker",
@@ -49,12 +50,14 @@ export default function Header() {
   const navigate = useNavigate();
   const location = useLocation();
 
+  // The RNG for the Surprise Me option
   useEffect(() => {
     const maxInd : number = points.length;
     headerOptions[2].location = `reader/${Math.floor(Math.random() * (maxInd))}`;
     window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
   },[location])
 
+    // Maps each header option to a Button element
     const getMenuButtons = () => {
         return headerOptions.map(({ label, location }) => {
           return (

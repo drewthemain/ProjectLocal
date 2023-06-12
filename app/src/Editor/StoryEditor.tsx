@@ -77,6 +77,8 @@ export default function MyEditor() {
         return 'not-handled';
     }
 
+    // Below are the several edit options that are stored in EditState
+
     const onUnderlineClick = () => {
         setEditorState(RichUtils.toggleInlineStyle(editorState, 'UNDERLINE'));
     }
@@ -98,6 +100,7 @@ export default function MyEditor() {
         setDisplay("");
     }
 
+    // Once submitted, spits out the converted text into draft.js data
     const onSubmit = () => {
         setDisplay(JSON.stringify(convertToRaw(editorState.getCurrentContent())));
     }

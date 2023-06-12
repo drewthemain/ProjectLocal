@@ -8,6 +8,7 @@ export default function Global() {
 
     return (
         <Router basename={PATH}>
+            {/*Screen is split into two sections: header and body */}
             <Header />
             <Switcher />
         </Router>

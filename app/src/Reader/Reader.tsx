@@ -16,6 +16,7 @@ const ReaderContainer = styled('div')`
 `
 
 export default function Reader() {
+    // Uses the custom Reader hook that dereferences the blocks into text
     const {loading, story, text} = useReader();
 
     return (
@@ -29,6 +30,7 @@ export default function Reader() {
                             <LightOrangeText variant="h6" align="center">{`${story?.caption}`}</LightOrangeText>
                         </Container>
                         <Container style={{marginTop: 30}}>
+                            {/* Editor used to properly display the specific text data */}
                             <Editor editorState={text || {} as EditorState} 
                                     readOnly={true} 
                                     onChange={() => console.log("Loaded!")} />
